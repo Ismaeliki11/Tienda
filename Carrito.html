@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carrito de Compras</title>
+<style>
+    body { font-family: Arial, sans-serif; background: #f7f7f7; }
+    header { background-color: #4CAF50; color: white; text-align: center; padding: 1rem; }
+    .container { width: 80%; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .cart-header { background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); padding: 10px; color: white; border-radius: 10px 10px 0 0; }
+    .cart-item { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; padding: 10px 0; }
+    .item-name { flex: 3; }
+    .item-price { flex: 1; text-align: right; }
+    .summary { text-align: right; padding: 10px 0; }
+    .summary .total { font-size: 24px; color: #4CAF50; }
+    .checkout-btn { background-color: #4CAF50; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 5px; margin-top: 20px; }
+    .logo { position: absolute; top: 10px; left: 10px; }
+    .logo img {
+        width: 108px; /* Ajusta el ancho a tu preferencia */
+        height: auto; /* Esto mantendrá la proporción del logo */
+    }
+</style>
+</head>
+<body>
+    <a href="index.html" class="logo">
+        <img src="https://i.imgur.com/W24Mcqv.jpeg" alt="Logo de la Tienda">
+    </a>
+<header>
+    <h1>Carrito de Compras</h1>
+</header>
+
+<div class="container">
+    <div class="cart-header">
+        <h2>Tu Selección</h2>
+    </div>
+    <!-- Elementos del carrito -->
+    <div class="cart-item">
+        <div class="item-name">Planta A (x2)</div>
+        <div class="item-price">6,98€</div>
+    </div>
+    <div class="cart-item">
+        <div class="item-name">Planta B (x1)</div>
+        <div class="item-price">3,49€</div>
+    </div>
+    <!-- Resumen de la compra -->
+    <div class="summary">
+        <div>Subtotal: 10,47€</div>
+        <div>IVA (21%): 2,20€</div>
+        <div class="total">Total: 12,67€</div>
+    </div>
+    <button class="checkout-btn">Proceder al Pago</button>
+</div>
+
+<script>
+// Aquí iría el código JavaScript para manejar el carrito y calcular los impuestos
+</script>
+
+</body>
+</html>

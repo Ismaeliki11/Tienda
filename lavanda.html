@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavanda - Tu Tienda de Plantas</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { width: 80%; margin: auto; }
+        .product-header { background-color: #008F8C; padding: 10px; text-align: center; }
+        .product-details { display: flex; justify-content: space-around; align-items: center; margin-top: 20px; }
+        .product-image { flex: 1; }
+        .product-info { flex: 2; }
+        .price { color: green; font-size: 24px; }
+        .add-to-cart { background-color: #4CAF50; color: white; padding: 10px 20px; border: none; cursor: pointer; }
+        .opinions { margin-top: 30px; }
+        textarea { width: 100%; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product-header">
+            <h1>Detalles de la Lavanda</h1>
+        </div>
+        <div class="product-details">
+            <div class="product-image">
+                <img src="https://th.bing.com/th/id/R.0a44bc4193da871cd429ef34b36abda5?rik=ZM1XhNHKKojzRQ&pid=ImgRaw&r=0" alt="Lavanda" width="300">
+            </div>
+            <div class="product-info">
+                <h2>Lavanda</h2>
+                <p>La lavanda es una planta endémica del Mediterráneo, apreciada por sus propiedades desinfectantes, calmantes, antisépticas y digestivas. Sus flores y aroma son valorados en perfumería y farmacia.</p>
+                <p class="price">Precio: 3,49€</p>
+                <button class="add-to-cart">Añadir a la Cesta</button>
+            </div>
+        </div>
+        <div class="opinions">
+            <h3>Opiniones</h3>
+            <textarea placeholder="Escribe tu opinión aquí..."></textarea>
+            <button class="add-to-cart">Enviar Opinión</button>
+        </div>
+    </div>
+
+    <script>
+        // Aquí iría el código JavaScript para añadir al carrito y manejar opiniones
+        function enviarOpinion() {
+            const opinion = document.getElementById("opinionText").value;
+            // Aquí puedes agregar lógica para guardar la opinión en una base de datos o realizar otras acciones
+            console.log("Opinión enviada:", opinion);
+            alert("¡Opinión enviada con éxito!");
+        }
+    </script>
+</body>
+</html>
+
